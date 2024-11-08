@@ -1,5 +1,4 @@
 import { setAllJobs } from "@/Redux/jobSlices"
-import { JOB_API_END_POINT } from "@/utils/constant"
 import axios from "axios"
 import { useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
@@ -11,7 +10,7 @@ const useGetAllJobs = () => {
     useEffect(()=>{
         const fetchAllJobs=async()=>{
             try{
-                const res= await axios.get(`${JOB_API_END_POINT}/getallpostjob?keyword=${searchedQuery}`,{
+                const res= await axios.get(`https://jobportal-3-j6fo.onrender.com/a1/v1/job/getallpostjob?keyword=${searchedQuery}`,{
                     withCredentials:true,
                 })
                 if(res.data.success){

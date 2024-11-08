@@ -10,7 +10,6 @@ import { Button } from "./ui/button";
 import { Loader2 } from "lucide-react";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
-import { USER_API_END_POINT } from "@/utils/constant";
 import { toast } from "sonner";
 import { setLoading, setUser } from "@/Redux/authSlice";
 
@@ -52,7 +51,7 @@ const UpdateProfileDialog = ({ open, setOpen }) => {
     try {
       dispatch(setLoading(true));
       const res = await axios.post(
-        `${USER_API_END_POINT}/profile/update`,
+        `https://jobportal-3-j6fo.onrender.com/api/v1/user/profile/update`,
         formData,
         {
           headers: {

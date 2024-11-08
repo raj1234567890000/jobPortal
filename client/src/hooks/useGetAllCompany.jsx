@@ -9,7 +9,7 @@ const useGetAllCompany= () => {
     useEffect(()=>{
         const fetchAllCompany=async()=>{
             try{
-                const res= await axios.get(`http://localhost:8080/api/v1/company/getcomapny`,{
+                const res= await axios.get(`https://jobportal-3-j6fo.onrender.com/api/v1/company/getcomapny`,{
                     withCredentials:true,
                 })
                 if(res?.data?.success){

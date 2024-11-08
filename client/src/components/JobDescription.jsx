@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { setSingleJob } from "@/Redux/jobSlices";
 import { useDispatch, useSelector } from "react-redux";
-import { APPLICATIONS_API_END_POINT, JOB_API_END_POINT } from "@/utils/constant";
 import { toast } from "sonner";
 
 
@@ -26,7 +25,7 @@ const [isApplied,setIsApplied]=useState(isInitallyApplied);
 
 const applyJobHandler=async()=>{
   try{
-const res= await axios.get(`${APPLICATIONS_API_END_POINT}/apply/${jobId}`,{withCredentials:true})
+const res= await axios.get(`https://jobportal-3-j6fo.onrender.com/a1/v1/job/apply/${jobId}`,{withCredentials:true})
 //console.log("Apply job",res.data)
 if(res){
   setIsApplied(true);
@@ -42,7 +41,7 @@ if(res){
   useEffect(()=>{
     const fetchSingleJobs=async()=>{
         try{
-            const res= await axios.get(`${JOB_API_END_POINT}/getuserjob/${jobId}`,{
+            const res= await axios.get(`https://jobportal-3-j6fo.onrender.com/a1/v1/job/getuserjob/${jobId}`,{
                 withCredentials:true,
             })
             if(res.data.success){

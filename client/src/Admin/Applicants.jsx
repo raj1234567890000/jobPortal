@@ -15,7 +15,7 @@ const Applicants = () => {
 
         const fetchAllApplicants=async()=>{
             try{
-const res= await axios.get(`http://localhost:8080/a1/v1/application/${params.id}/applicant`,{withCredentials:true});
+const res= await axios.get(`https://jobportal-3-j6fo.onrender.com/a1/v1/application/${params.id}/applicant`,{withCredentials:true});
 if(res?.data.sucess){
    // console.log(res.data);
     dispatch(setAllApplicants(res?.data.job))
