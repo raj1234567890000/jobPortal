@@ -5,7 +5,6 @@ import { Label } from "@/components/ui/label";
 import { RadioGroup } from "@/components/ui/radio-group";
 import { setLoading } from "@/Redux/authSlice";
 import Nav from "@/Shared/Nav";
-import { USER_API_END_POINT } from "@/utils/constant";
 import axios from "axios";
 import { Loader2 } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -46,7 +45,7 @@ const Singup = () => {
     }
     try {
       dispatch(setLoading(true));
-      const res = await axios.post(`${USER_API_END_POINT}/register`, formData, {
+      const res = await axios.post(`https://jobportal-1-vd4g.onrender.com/api/v1/user/register`, formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
