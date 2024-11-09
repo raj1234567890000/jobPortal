@@ -40,7 +40,7 @@ toast.success(res.data.message);
         <div className="flex item-center justify-between mx-auto max-w-7xl h-16 mt-5 sm:flex items-center">
           <div>
             <h1 className="text-2xl font-bold ml-4 ">
-            Career <span className="text-[#f83002]">Nest</span>
+            Career<span className="text-[#f83002]">Nest</span>
             </h1>
           </div>
           <div className="flex items-center gap-12">
