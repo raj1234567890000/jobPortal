@@ -13,7 +13,7 @@ import axios from "axios";
 import { toast } from "sonner";
 import { setLoading, setUser } from "@/Redux/authSlice";
 
-const UpdateProfileDialog = ({ open, setOpen }) => {
+const UpdateProfileDialog = ({ open , setOpen }) => {
   const { user } = useSelector((store) => store.auth);
   const { loading } = useSelector((store) => store.auth);
 
