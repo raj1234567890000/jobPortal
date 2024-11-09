@@ -175,7 +175,7 @@ const UpdateProfileDialog = ({ open , setOpen }) => {
             </div>
             <DialogFooter>
               {loading ? (
-                <Button className=" bg-black text-white  w-full my-4">
+                <Button className=" bg-gray-900 text-white  w-full my-4">
                   <Loader2 className="mr-2 h-4 w-4 animate-spin" />
                   Please Wait
                 </Button>
