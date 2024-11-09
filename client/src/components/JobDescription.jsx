@@ -25,7 +25,7 @@ const [isApplied,setIsApplied]=useState(isInitallyApplied);
 
 const applyJobHandler=async()=>{
   try{
-const res= await axios.get(`https://jobportal-3-j6fo.onrender.com/a1/v1/job/apply/${jobId}`,{withCredentials:true})
+const res= await axios.get(`https://jobportal-3-j6fo.onrender.com/v1/application/getapplyjob/${jobId}`,{withCredentials:true})
 //console.log("Apply job",res.data)
 if(res){
   setIsApplied(true);
