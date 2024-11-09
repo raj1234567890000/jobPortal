@@ -44,7 +44,7 @@ toast.success(res.data.message);
             </h1>
           </div>
           <div className="flex items-center gap-12">
-            <ul className="flex font-medium items-center gap-5 cursor-pointer ml-14 pl-5">
+            <ul className="flex font-medium items-center gap-5 cursor-pointer ml-3 pl-5">
 {
   user && user.role === 'recruiter'?(
     <>
