@@ -165,7 +165,7 @@ const Singup = () => {
                 />
               </div>
             {loading ? (
-              <Button className="w-full my-4 bg-black text-white">
+              <Button className="w-full my-4 bg-gray-900 text-white cursor-not-allowed">
                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />
                 Please Wait
               </Button>

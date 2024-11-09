@@ -122,7 +122,7 @@ const Login = () => {
               </RadioGroup>
             </div>
             {loading ? (
-              <Button className="w-full my-4 bg-black text-white">
+              <Button className="w-full my-4 bg-gray-900 cursor-not-allowed text-white">
                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />
                 Please Wait
               </Button>
