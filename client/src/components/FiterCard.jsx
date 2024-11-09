@@ -9,7 +9,7 @@ import { RadioGroup, RadioGroupItem } from './ui/radio-group';
 const fitlerData = [
     {
         fitlerType: "Location",
-        array: ["Delhi NCR", "Bangalore", "Hyderabad", "Pune", "Mumbai"]
+        array: ["Delhi NCR", "Bangalore", "Hyderabad", "Pune", "Mumbai,Noida"]
     },
     {
         fitlerType: "Industry",
