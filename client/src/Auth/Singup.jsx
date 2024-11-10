@@ -57,10 +57,10 @@ const Singup = () => {
       }
 
      // console.log(res);
-    } catch (err) {
-      toast.error("Something is Wrong");
+    } catch (error) {
+      toast.error(error.response.data.message);
 
-      console.log(err);
+      console.log(error);
     } finally {
       dispatch(setLoading(false));
     }
