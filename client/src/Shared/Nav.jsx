@@ -21,7 +21,13 @@ const navigate=useNavigate();
 
 const LogOutHnadler=async()=>{
   try{
-const res= await axios.get(`https://jobportal-3-j6fo.onrender.com/api/v1/user/logout`,{withCredentials:true})
+const res= await axios.get(`https://jobportal-3-j6fo.onrender.com/api/v1/user/logout`,
+  {
+    headers:{
+      "Content-Type":"application/json"
+    },
+    withCredentials:true
+  })
 if(res.data.sucess){
 dispatch(setUser(null));
 navigate('/')
